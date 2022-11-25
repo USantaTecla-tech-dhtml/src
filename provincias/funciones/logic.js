@@ -6,19 +6,6 @@ const COUNTRIES = [
   { name: "Santa Cruz de Tenerife", density: 454555, population: 35433 },
 ];
 
-function getAverage(amounts) {
-  let sum = 0;
-  let count = 0;
-  for (let amount of amounts) {
-    if (typeof amount == "number") {
-      sum += amount;
-      count++;
-    }
-  }
-  return sum / count;
-}
-
-
 document.getElementById("body").addEventListener("load", function (){
   let body = this.document.getElementById('body');
   createHeader(body);
@@ -76,4 +63,16 @@ function createFooter(body) {
   div.append(p);
   div.classList.add("info-box");
   body.append(div);
+}
+
+function getAverage(amounts) {
+  let sum = 0;
+  let count = 0;
+  for (let amount of amounts) {
+    if (typeof amount == "number") {
+      sum += amount;
+      count++;
+    }
+  }
+  return sum / count;
 }
