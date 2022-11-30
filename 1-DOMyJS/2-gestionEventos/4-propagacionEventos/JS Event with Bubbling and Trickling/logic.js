@@ -3,9 +3,9 @@ function onLoad() {
     // div.addEventListener("click", alertBubblingFromListener);
     // div.addEventListener("click", alertTricklingFromListener, true);
     div.addEventListener("click"
-      , alertBubblingFromListenerWithoutPropagation);
-    div.addEventListener("click"
-      , alertTricklingFromListenerWithoutPropagation, true);
+       , alertBubblingFromListenerWithoutPropagation);
+     div.addEventListener("click"
+       , alertTricklingFromListenerWithoutPropagation, true);
   }
 }
 

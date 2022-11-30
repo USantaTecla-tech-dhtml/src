@@ -4,7 +4,7 @@
     <title>JS Event. Cancelación</title>
   </head>
   <script>
-    const DIGITS = /[0-9]/g;
+    const DIGITS = /[0-9]/;
 		
     var data = {
       count : 0,
@@ -21,6 +21,15 @@
         event.preventDefault();
       }
     }
+
+    // function filterNoDigitsWithPreventDefaul(event){
+    //     var origLastIndex = DIGITS.lastIndex;
+    //     DIGITS.lastIndex = 0;
+    //     if (!(DIGITS.test(event.key))){
+    //     event.preventDefault();
+    //   }
+    //   DIGITS.lastIndex = origLastIndex;
+    // }
 
     function filterNoDigitsWithReturn(event){
       return DIGITS.test(event.key);
