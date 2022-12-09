@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS CSS. element</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script language="javascript" src="./app.js"></script>
+</head>
+
+<body onload="colorChanger.load.bind(colorChanger)()">
+  <h1>Título</h1>
+  <form>
+    <input type="button" value="Cambiar color" onclick="colorChanger.changeColor.bind(colorChanger)(event, this)">
+  </form>
+</body>
+
+</html>
